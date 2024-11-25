@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="images/téléchargement.png">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+                <img src="images/logo.jpeg" alt="" class="logo">
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+                <li><a href="#devops">devops?</a></li>
+                <li><a href="#automatisme">automatisme</a></li>
+                <li><a href="#collaboration">collaboration devops</a></li>
+                <li><a href="#culture">culture devops</a></li>
+                <li><a href="#securite">securite devops</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- landing -->
+    <div class="landing ">
+        <h1 class="rotate-scale-up">welcome to the world of devops</h1>
+    </div>
+    <!-- end landing -->
+    <section class="devops" id="devops">
+        <div class="container">
+            <br>
+            <h2 class="titles evens">Qu’est-ce que DevOps?</h2>
+            <h4>définition :</h4>
+            <p>DevOps est un ensemble de pratiques et d’outils qui unissent le développement logiciel
+                et les opérations IT. il unifie le développement logiciel (Dev) et les opérations informa
+            tiques (Ops), ce qui augmente la capacité des organisations à distribuer des applications
+                et des services très rapidement.
+            </p>
+            <h4>Le schéma DevOps en forme d’infini :</h4>
+            <p>Le schéma DevOps en forme d’infini est une représentation visuelle qui
+                illustre le cycle de vie continu du développement logiciel dans une approche
+                DevOps. Cette boucle infinie symbolise l’amélioration continue, la collaboration et
+                l’automatisation qui caractérisent cette méthodologie 
+            </p>
+            <div class="image">
+                <img src="images/DevOps-im1.png" alt="" width="50%">
+            </div>
+            <ol>
+                <li><span>Planification :</span> Définition des objectifs, des fonctionnalités et des priorités du
+                    projet, et Création d’un backlog des tâches à réaliser.
+                </li>
+                <li><span>Développement :</span> Écriture du code source. Réalisation des tests unitaires.
+                </li>
+                <li><span>Intégration continue (CI):</span> Fusion du code avec le dépôt principal, lancement
+                    automatique de tests (unitaires, d’intégration, etc...) Construction de l’application.
+                </li>
+                <li><span>Livraison continue (CD) :</span> Déploiement automatique de l’application dans un
+                    environnement de test ou de production. Configuration de l’infrastructure (si nécessaire).
+                </li>
+                <li><span>Surveillance :</span> Suivi des performances de l’application en production. Collecte de
+                    données et de retours utilisateurs</li>
+                <li><span>Retour à la planification :</span> Analyse des données de surveillance pour identifier
+                    les améliorations à apporter. Mise à jour du backlog en fonction des nouvelles
+                    exigences.
+                </li>
+            </ol>
+            <h4>Avantage :</h4>
+            <ul>
+                <li><span>Déploiements plus fréquents :</span> L’automatisation des processus permet de déployer
+                    de nouvelles fonctionnalités et de corriger des bugs plus rapidement, réduisant
+                    ainsi le time-to-market.
+                </li>
+                <li><span>Cycles de développement plus courts :</span> Les boucles de feedback sont raccourcies grâce à l’intégration continue et à la livraison continue, ce qui permet d’identifier et de résoudre les problèmes plus rapidement.
+                </li>
+                <li><span>Tests automatisés :</span> Les tests unitaires, d’intégration et d’acceptation sont automatisés, ce qui garantit une qualité de code plus élevée et moins de bugs en production.
+                </li>
+                <li><span>Détection précoce des problèmes : </span>Les problèmes sont identifiés et corrigés dès les
+                    premières étapes du développement, ce qui réduit les coûts de correction.</li>
+            </ul>
+        </div>
+    </section>
+    <!-- separateur  -->
+    <section class="spikes odd"></section>
+    <section class="automatisme" id="automatisme">
+        <div class="container">
+            <br>
+            <h2 class="titles odds">automatisme</h2>
+            <p>Le pipeline CI/CD au sein d’EDP orchestre le processus de livraison de logiciels,
+                englobant plusieurs étapes séquentielles pour garantir la robustesse et la fiabilité.
+            </p>
+            <div class="image">
+                <img src="images/DevOps-im2.png" alt="" width="50%">
+            </div>
+            <p>
+                Le pipeline CI/CD suit une architecture modulaire et évolutive qui exploite divers
+                outils pour garantir la fiabilité et l’efficacité du processus de livraison de logiciels.
+                Découvrez les composants clés impliqués dans le pipeline et leurs fonctionnalités :
+            </p>
+            <div class="parent">
+                <div class="box ">
+                    <h4>Code source</h4>
+                    <p>Toute modification apportée au code source déclenche automatiquement le pipeline.</p>
+                </div>
+                <div class="box ">
+                    <h4>Validation</h4>
+                    <p>Le système vérifie la conformité du message de commit aux standards définis, assurant
+                        ainsi une traçabilité efficace.</p>
+                </div>
+                <div class="box">
+                    <h4>Construction et test</h4>
+                    <p>Le code est compilé, les tests unitaires sont exécutés, et un artefact (par exemple, un
+                        fichier JAR ou une image Docker) est produit.</p>
+                </div>
+                <div class="box">
+                    <h4>Analyse de sécurité statique</h4>
+                    <p>SonarQube analyse le code à la recherche de vulnérabilités potentielles, de problèmes
+                        de qualité et de conformité aux bonnes pratiques de codage.
+                    </p>
+                </div>
+                <div class="box">
+                    <h4>Analyse de composition logicielle</h4>
+                    <p>Les dépendances de l’application sont analysées pour détecter d’éventuelles vulnérabilités ou problèmes de licences.
+                    </p>
+                </div>
+                <div class="box">
+                    <h4>Publication des artefacts</h4>
+                    <p>L’artefact de l’application, les images Docker et d’autres artefacts sont stockés dans
+                        des référentiels pour une utilisation future.
+                    </p>
+                </div>
+                <div class="box">
+                    <h4>Déploiement</h4>
+                    <p>L’application est déployée dans différents environnements (test, qualité, production)
+                        à l’aide d’outils comme Argo CD ou Tekton.
+                    </p>
+                </div>
+                <div class="box">
+                    <h4>Rapports</h4>
+                    <p>Les résultats des tests sont consolidés et présentés dans un portail de rapports pour
+                        faciliter l’analyse.
+                    </p>
+                </div>
+            </div>
+            
+        </div> 
+    </section>
+    <!-- separateur  -->
+    <section class="spikes even"></section>
+    <section class="collaboration" id="collaboration">
+        <div class="container">
+            <br>
+            <h2 class="titles evens">collaboration</h2>
+            <p>le DevOps est avant tout une culture et une philosophie qui consiste à mettre en place
+            un terrain de collaboration entre les équipes du développement logiciel et ceux des opérations d’infrastructure [3] . Par exemple Le contrôle du code source qui’est un moyen pour
+            garder trace et historiser les changements apportés à un code source et de collaborer sur
+            ce dernier en utilisant git ;
+            Git est un outil indispensable pour le développement logiciel, en particulier dans le
+            contexte du DevOps. Il permet de gérer efficacement le code source en offrant les fonctionnalités suivantes:
+            </p>
+            <ul>
+                <li><span>Historique complet des modifications :</span> Chaque changement apporté au code
+                    est enregistré, ce qui facilite la recherche d’erreurs et le retour à des versions précédentes si nécessaire.</li>
+                <li><span>Branching et merging :</span> Ces fonctionnalités permettent aux développeurs de travailler en parallèle sur différentes fonctionnalités sans se gêner mutuellement, puis
+                    de fusionner leurs travaux de manière efficace.
+                </li>
+                <li><span>Flexibilité :</span> Git est très flexible et peut être adapté à différents types de projets
+                    et d'équipe.</li>
+            </ul>
+            <div class="image">
+                <img src="images/DevOps-im3.png" alt="" >
+            </div>
+            <ul>
+                <li><span>Équipes multifonctionnelles :</span> Les équipes sont composées de développeurs, d’opérateurs, de testeurs, etc., travaillant ensemble sur tout le cycle de vie du logiciel.</li>
+                <li><span>Culture de partage :</span> La connaissance est partagée et les informations circulent
+                    librement entre les équipes.
+                </li>
+            </ul>
+            <div class="info-special">
+                <a target="_blank" href="https://www.atlassian.com/fr/devops">read more</a>
+                <i class="fa-solid fa-long-arrow-alt-right"></i>
+            </div>
+        </div>
+    </section>
+    <!-- separateur  -->
+    <section class="spikes odd"></section>
+    <section class="Culture_DevOps" id="culture">
+        <div class="Culture_DevOps_container">
+            <br>
+            <h2 class="titles odds">Culture DevOps</h2>
+                <p>
+                    La culture DevOps est bien ensemble d’outils ou de pratiques qui vise à réunir les
+                    équipes de développement (Dev) et les équipes d’exploitation (Ops) autour d’un objectif
+                    commun : livrer des logiciels de haute qualité de manière plus rapide et plus fiable [1] .
+                    Les piliers de la culture DevOps.
+                </p>
+                <h4>Collaboration et communication</h4><br>
+                <ul>
+                    <li><b>Collaboration et communication: </b>Les équipes sont composées de développeurs,
+                        d’opérateurs, de testeurs, etc., travaillant ensemble dès le début du projet.</li><br>
+                    <li><b>Communication ouverte: </b>Une communication fluide et transparente est essentielle pour favoriser la collaboration et résoudre les problèmes rapidement.</li><br>
+                    <li><b>Culture du partage:</b> Le partage des connaissances et des meilleures pratiques est
+                        encouragé au sein de l’équipe et de l’organisation.</li><br>
+                </ul>
+
+                <h4>Responsabilisation des équipes</h4><br>
+                <ul>
+                    <li><b>Autonomie: </b>Les équipes sont responsabilisées et ont l’autonomie nécessaire pour
+                        prendre des décisions.</li><br>
+                    <li><b>Collaboration: </b>Les équipes travaillent ensemble pour fournir un service de qualité
+                        aux utilisateurs.</li>
+                </ul>
+
+
+                <h4>Bénéfices de la culture DevOps</h4><br>
+                <ul>
+                    <li><b>Accélération de la mise sur le marché:</b>Grâce à l’automatisation et à la collaboration, les cycles de développement sont raccourcis et les produits sont livrés
+                        plus rapidement.</li><br>
+                    <li><b>Amélioration de la qualité des logiciels:</b>Les tests automatisés et les retours
+                        utilisateurs permettent d’identifier et de corriger les problèmes plus rapidement.</li><br>
+                    <li><b>Réduction des coûts : </b>L’automatisation et l’efficacité des processus permettent
+                        de réduire les coûts.</li>
+                </ul>
+        </div>
+        <div class="info-special">
+            <a target="_blank" href="https://www.atlassian.com/fr/devops">read more</a>
+            <i class="fa-solid fa-long-arrow-alt-right"></i>
+        </div>
+        <br>
+    </section>
+    <!-- separateur  -->
+    <section class="spikes even"></section>
+    <section class="Sécurité_DevSecOps" id="securite">
+        <div class="Sécurité_DevSecOps">
+            <br>
+            <h2 class="titles evens">sécurité et divops</h2>
+            <p>La sécurité est intégrée dès le début du cycle de développement dans une approche
+                appelée DevSecOps. On deux types de sécurité
+                Elle est intégrée à chaque phase : de la conception à la production. Cela permet de détecter
+                et de corriger les vulnérabilités plus tôt, réduisant ainsi les risques d’attaque.
+            </p>
+
+            <h3>Les logiciels et les technologies qui facilitent la sécurité en DevOps :</h3>
+            <p>
+                L’intégration de la sécurité dès le début du cycle de développement (DevSecOps) est
+                devenue essentielle pour garantir la protection des applications. De nombreux outils et
+                technologies ont été développés pour faciliter cette démarche.
+            </p>
+            <h4>Outils d’analyse de code statique et dynamique:</h4>
+                <p>
+                    Analyse de code statique : Ces outils examinent le code source à la recherche de vulné-
+                rabilités potentielles avant même que le code ne soit exécuté. Des exemples incluent
+                SonarQube, Checkmarx et Snyk.
+                Analyse de code dynamique : Ces outils analysent le code en cours d’exécution pour
+                détecter les vulnérabilités qui peuvent apparaître uniquement dans certains contextes.
+                Burp Suite et OWASP ZAP sont des exemples populaires.
+                </p>
+            <br>
+            <h4>Outils de gestion des secrets:</h4>
+            <p>
+                Gestionnaires de secrets : Ces outils permettent de stocker de manière sécurisée les
+            informations sensibles comme les mots de passe, les clés API et les certificats.
+            Hashicorp Vault et AWS Secrets Manager en sont des exemples.
+            </p>
+
+            <h4>Outils de sécurité des infrastructures:</h4>
+            <p>
+                Configuration en tant que code : Des outils comme Terraform et Ansible permettent
+                de définir et de gérer l’infrastructure de manière déclarative, réduisant les erreurs
+                de configuration.
+                Scanning de vulnérabilités : Des outils comme Nessus et OpenVAS permettent de
+                scanner les systèmes et les applications à la recherche de vulnérabilités connues.
+            </p>
+
+            
+            </p>
+            <div class="image">
+                <img src="images/DevOps-im5.png" alt="" width="50%">
+            </div>
+        </div>
+    </section>
+    <br>
+    <div id="conc" class="conc_container">
+        <br>
+    <h3 id="conclusion">Conclusion: </h3>
+        <p class="conclusion">
+            En conclusion, l’adoption de DevSecOps nécessite une combinaison d’outils, de processus et de culture, il reste toujours le meilleur outils, mais il faut en tenir compte à
+            quelleque defis cômme le changement ulturel (La transformation DevOps nécessite un
+            changement profond de la culture d’entreprise, ce qui peut prendre du temps), Formation (Les équipes doivent être formées aux nouveaux outils et méthodes), Complexité (
+            La mise en place d’un pipeline DevOps peut être complexe, en particulier pour les grandes
+            organisations)
+            <br><br>
+        </p>
+    </div>
+    <!-- footer -->
+    <footer>
+        <h3 class="contact">Contactez-nous</h3>
+        <p>Vous avez une question sur DevOps ? Envoyez-nous un message :</p>
+        <div class="footer-content">
+            <form action="" method="">
+                <label class="input" for="name">
+                <input  type="text" id="name" name="name" required placeholder="ton nom">
+                </label>
+  
+                <label for="email">
+                  <input class="input" type="email" id="email" name="email" required placeholder="ton email">
+                </label>
+          
+                <label for="message">
+                  <textarea id="message" name="message"  required placeholder="laisser nous un commentaire"></textarea>
+                </label>
+          
+                <button type="submit">Envoyer</button>
+              </form>
+            <div class="box">
+                <h3>Arssekal | Benzzi</h3>
+                <ul class="social">
+                    <li>
+                        <a href="" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text">N'hister pas à nous contacter pour plus d'informations</p>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">morroco ,agadir</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">business houres: from 10:00 to 19:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone fa-fw"></i>
+                    <div class="info">
+                        <span>0655667788</span>
+                        <span>0655667788</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="us">
+          <p>&copy; 2024 <span>Arssekal | Benzzi</span>. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="dynamique.js"></script>
+</body>
+</html>
