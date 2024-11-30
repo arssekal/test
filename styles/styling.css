@@ -384,6 +384,7 @@ header {
   z-index: 1;
   position: relative;
   cursor: pointer;
+  user-select: none;
 }
 .main-title::before,
 .main-title::after {
