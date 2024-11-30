@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture DevOps</title>
+    <link rel="stylesheet" href="styles/styleCulture.css">
+</head>
+<body>
+    <main id="main">
+        <section id="section1">
+            <h1>Culture DevOps</h1>
+            <h2>Qu’est-ce que la culture DevOps ?</h2>
+
+            <article class="article">
+            <p>
+                Le <b>DevOps</b> est un outillage complété par un processus de collaboration entre les développeurs
+            de logiciels et les services informatiques, deux équipes traditionnellement séparées et dont les 
+            objectifs sont souvent contradictoires. Les développeurs veulent être en mesure de publier rapidement 
+            de nouvelles fonctionnalités et des corrections de bugs afin de fournir de la valeur aux utilisateurs 
+            dès que possible. L’équipe d’exploitation se préoccupe davantage de la stabilité, en veillant à ce que 
+            tout fonctionne sans heurts avec une haute disponibilité. L’agilité et la stabilité peuvent être contradictoires 
+            et conduire à une méthodologie de développement qui ne satisfait ni les développeurs ni l’équipe d’exploitation.
+            </p>
+            <br>
+            <p>
+                La culture DevOps contribue à satisfaire ces deux besoins. Elle permet la coordination et la collaboration 
+                de ces rôles autrefois cloisonnés. L’objectif est de combler le fossé entre l’équipe d’exploitation informatique 
+                et l’équipe de développement afin d’améliorer la communication et la collaboration, de créer des processus 
+                plus transparents et d’aligner la stratégie et les objectifs pour une livraison plus rapide et plus efficace.
+            </p>
+        
+            <br>
+            <p>
+                Cette relation plus étroite entre « Dev »  et « Ops » se reflète dans chaque phase du cycle de vie DevOps: 
+                planifier, développement, générer, tester, publier, déployer, exploiter et surveiller. Elle génère de façon 
+                constante des retours clients, ce qui renforce le potentiel d’amélioration lors du dévelo
+            </p>
+        </article>
+
+     <h2>Le rôle de l’ingénieur DevOps</h2>
+     <article class="article">
+        <p>
+            Avec l’évolution du secteur informatique, les entreprises ont manifesté de nouveaux besoins et font appel 
+            à de nouvelles compétences techniques. C’est ainsi qu’a émergé le profil d’ingénieur DevOps, un métier à 
+            double compétence puisqu’il combine les compétences du développeur et de l’administrateur système.
+        </p>
+
+        <p>De nos jours, avec les méthodes de développement Agile, on procède en cycle : livrer le code par lots,
+            mettre en production, revenir sur ce qui a été livré en injectant des évolutions et progresser ainsi 
+            par petits pas. C’est là où intervient l’ingénieur DevOps : il va mettre en place un ensemble de processus, 
+            d’outils et automatiser le tout au maximum pour que chaque itération se passe le mieux possible. L’objectif 
+            final est de diminuer les actions humaines afin de livrer les produits le plus rapidement possible.</p>
+        </article>
+        <h2>Le cycle de vie du DevOps</h2>
+        <article class="article">
+        <p>
+            Chaque phase du cycle de vie DevOps vise à boucler la boucle entre le développement et l’exploitationet à 
+            piloter la production par le biais du développement continu, de l’intégration, des tests, de la surveillance 
+            et de la rétroaction, de la livraison et du déploiement.
+        </p>
+    </article>
+
+    <img id="img7" src="images/DevOps-im7.webp" alt="lol">
+    <h3>Planifier</h3>
+    <p class="p">
+        La phase de planification couvre tout ce qui se passe avant le développement du code de l’application. 
+        Les exigences internes et les feedbacks des utilisateurs sont recueillis auprès des parties prenantes 
+        et des clients afin d’établir une feuille de route du produit qui servira de guide pour le développement futur.
+    </p>
+
+    <h3>Développer</h3>
+    <p class="p">
+        Une fois la phase de planification terminée, les équipes de développement se mettent au travail et codent l’application. 
+    </p>
+
+    <h3>Générer</h3>
+    <p class="p">
+        Dès qu’une tâche est terminée, le code est transféré vers un dépôt central. Ce « push » déclenche une « pull request » 
+        qui est utilisée pour effectuer une révision du code. La demande est ensuite confirmée si tout est correct. Dans le 
+        même temps, des tests automatisés sont effectués pour vérifier que le nouveau code ne contient pas de bogues éventuels. 
+        Si l’un de ces tests échoue, l’information est envoyée immédiatement et le code peut être amélioré. Si tous les tests 
+        sont réussis, le nouveau code est adopté.
+    </p>
+
+    <h3>Tester</h4>
+    <p class="p">
+        En plus des procédures de test qui sont déjà effectuées pendant la phase de construction, des tests plus approfondis 
+        peuvent être réalisés dans un environnement séparé qui est utilisé en plus pour le déploiement. Cet environnement 
+        est souvent appelé « environnement de test ». Dans cet environnement, des tests manuels peuvent également être 
+        effectués en plus des tests approfondis et automatisés. Les premiers peuvent inclure, par exemple, des tests 
+        d’intégration et de sécurité pour découvrir les éventuels points faibles de l’application. En outre, des tests
+        d’acceptation par les utilisateurs peuvent être effectués dans l’environnement de test avant la publication.
+    </p>
+
+    <h3>Publier</h3>
+    <p class="p">
+        Une fois ces procédures de test étendues et approfondies terminées, des mesures visant à préparer la publication 
+        dans un environnement de production peuvent être effectuées. À ce stade, il est décidé quelles modifications 
+        doivent être incluses dans la version. En fonction du processus de publication de l’entreprise, il peut s’agir 
+        d’une étape manuelle ou automatique. Certaines entreprises publient les nouvelles versions selon un calendrier 
+        fixe tandis que d’autres le font automatiquement dès qu’un nouveau code a passé avec succès la phase de test.
+    </p>
+
+    <h3>Déployer</h3>
+    <p class="p">
+        C’est la phase au cours de laquelle la nouvelle version est déployée. Grâce aux outils modernes, cette opération 
+        est désormais automatisée et peut être réalisée sans interrompre les exploitations régulières. Le même code qui 
+        a déjà été utilisé pour le déploiement dans l’environnement de test peut être utilisé ici. Si des difficultés 
+        inattendues surviennent pendant la phase de déploiement, l’état précédent de l’environnement de production peut 
+        être temporairement restauré sans problème.
+    </p>
+
+    <h3>Exploiter</h3>
+    <p class="p">
+        Les changements sont désormais en ligne et disponibles pour les utilisateurs. Le client a la possibilité de donner 
+        son avis à l’équipe. C’est le seul moyen d’obtenir des informations précieuses sur la façon dont le logiciel est 
+        utilisé et sur les souhaits des utilisateurs. C’est l’un des plus grands facteurs de réussite et il doit être garanti !
+    </p>
+
+    <h3>Surveiller</h3>
+    <p class="p">
+        En plus du feedback des utilisateurs, d’autres données générées pendant l’utilisation doivent également être collectées. 
+        Il peut s’agir, par exemple, de bogues, de temps de latence, de numéros d’accès et du comportement d’utilisation individuel 
+        des utilisateurs. La combinaison du feedback des clients et des données supplémentaires collectées peut ensuite être transmise 
+        aux gestionnaires de produits et aux équipes de développement afin qu’ils puissent en déduire les futures fonctionnalités. 
+        De cette façon, les clients peuvent faire développer ce qu’ils veulent vraiment et ce dont ils ont besoin.
+    </p>
+
+
+    <h2 id="Conclusion">Conclusion</h2>
+    <p class="p">
+        Une chaîne d’outils DevOps moderne prend en charge tous ces concepts, phases et procédures à l’aide d’outils appropriés qui peuvent 
+        faciliter considérablement le développement de logiciels basé sur le principe DevOps.
+    </p>
+        </section>
+    </main>
+
+
+</body>
+</html>
