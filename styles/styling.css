@@ -515,6 +515,9 @@ header {
 .Culture_DevOps ul {
   margin-left: 20px;
 }
+.Culture_DevOps .fix {
+  margin-bottom: 20px;
+}
 /* end Culture_DevOps */
 
 /* Sécurité_DevSecOps */
