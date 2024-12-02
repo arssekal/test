@@ -386,6 +386,26 @@ header {
   cursor: pointer;
   user-select: none;
 }
+/* scrol to top */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px; 
+  font-size: 20px;
+  display: none; /* Masqué au début */
+  cursor: pointer;
+  text-align: center;
+}
+
+.back-to-top-btn:hover {
+  background-color: #0056b3;
+}
+/* end scrol o top */
 .main-title::before,
 .main-title::after {
   content: "";
