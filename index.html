@@ -39,6 +39,12 @@
             <i class="fa-solid fa-angles-down"></i>
         </a>
     </div>
+    <!-- cookies -->
+    <div class="cookie-alert" id="cookie-alert">
+        Ce site utilise des cookies pour améliorer votre expérience. 
+        <button id="accept-cookies">Accepter</button>
+    </div>
+    <!-- end cookies -->
     <!-- end landing -->
     <section class="devops" id="devops">
         <div class="container">
@@ -318,16 +324,23 @@
         <p>Vous avez une question sur DevOps ? Envoyez-nous un message :</p>
         <div class="footer-content">
             <form action="" method="">
+                <h3>se connecter</h3>
                 <label class="input" for="name">
                 <input  type="text" id="name" name="name" required placeholder="ton nom">
                 </label>
                 <label for="email">
                   <input class="input" type="email" id="email" name="email" required placeholder="ton email">
                 </label>
-                <label for="message">
-                  <textarea id="message" name="message"  required placeholder="laisser nous un commentaire"></textarea>
+                <label for="password">
+                    <input type="password" id="password" required placeholder="mots de passe">
                 </label>
-                <button type="submit">Envoyer</button>
+                <label for="message">
+                  <textarea id="message" name="message" placeholder="laisser nous un commentaire"></textarea>
+                </label>
+                <div class="buttons">
+                    <button type="submit" id="submit">Envoyer</button>
+                    <button id="getCookieBtn">get cookie</button>
+                </div>
             </form>
             <div class="box">
                 <h3>Arssekal | Benzzi</h3>

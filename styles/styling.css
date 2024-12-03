@@ -783,12 +783,18 @@ footer .footer-content {
   padding: 10px 20px;
   border-radius: 5px;
 }
+.footer-content form h3 {
+  padding: 10px;
+} 
+.footer-content form .buttons {
+  display: flex;
+  justify-content: space-between;
+}
 .footer-content form label {
   margin: 10px 0;
 }
 .footer-content form button {
   width: fit-content;
-  margin: 0 auto;
   padding: 8px 15px;
   border-radius: 5px;
   border: none;
@@ -848,3 +854,37 @@ footer .us span {
   color: var(--section-color-impair);
 }
 /* end footer */
+/* start cookies */
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+}
+
+.cookie-alert button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.cookie-alert button:hover {
+  background-color: #0056b3;
+}
+/* end cookies */
