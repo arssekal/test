@@ -5,7 +5,7 @@ html {
 :root {
   --main-purple-color: #5c48f1;
   --elements-background-color: #eeecfd;
-  --section-color-impair: #B5FFFC;
+  --section-color-impair: #b5fffc;
   --section-color-pair: #f3f4f5;
   --clr-primary-1: hsl(205, 86%, 17%);
   --clr-primary-5: hsl(205, 78%, 60%);
@@ -42,14 +42,15 @@ a {
 }
 /* end global style */
 /* separateur */
-.triangle, .triangle2 {
+.triangle,
+.triangle2 {
   position: relative;
   background: var(--main-purple-color);
   height: 2px;
 }
 
 .triangle::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   width: 0;
@@ -64,7 +65,7 @@ a {
   z-index: 2;
 }
 .triangle2::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 30px;
   width: 0;
@@ -166,14 +167,14 @@ header {
     padding: 0;
     margin: 0 0.5rem;
     position: relative; /*modification*/
-  } 
+  }
   .links a:hover {
     color: var(--main-purple-color);
     font-weight: normal;
   }
   /*modification*/
   .links a::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 4px;
@@ -181,7 +182,7 @@ header {
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
-    transition: .3s;
+    transition: 0.3s;
     z-index: 0;
   }
   .links a:hover::after {
@@ -208,12 +209,42 @@ header {
 .landing h1 {
   background-color: #00000091;
   padding: 50px;
-  border-radius: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   color: white;
+  border: 5px solid transparent;
+}
+.landing h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 5px solid transparent;
+  border-image: linear-gradient(90deg, green, white, orange);
+  border-image-slice: 1;
+  border-radius: 10px;
+  animation: move-border 2s linear infinite;
+}
+@keyframes move-border {
+  0% {
+      clip-path: inset(0% 100% 100% 0%);
+  }
+  25% {
+      clip-path: inset(0% 0% 100% 0%);
+  }
+  50% {
+      clip-path: inset(0% 0% 0% 0%);
+  }
+  75% {
+      clip-path: inset(100% 0% 0% 0%);
+  }
+  100% {
+      clip-path: inset(100% 100% 0% 0%);
+  }
 }
 .landing .background-video {
   position: absolute;
@@ -221,7 +252,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   z-index: -1;
 }
 .landing .down {
@@ -231,20 +262,20 @@ header {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  transition: .3s;
+  transition: 0.3s;
 }
 .landing .down i {
   animation: updown 0.5s infinite;
 }
 @keyframes updown {
   0% {
-     transform: translateY(5px);
+    transform: translateY(5px);
   }
   50% {
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
   100% {
-      transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
 /* end landing */
@@ -401,7 +432,6 @@ header {
     max-width: 350px;
     margin: 0 20px;
   }
-
 }
 .main-title {
   border: 2px solid black;
@@ -425,7 +455,7 @@ header {
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 5px; 
+  border-radius: 5px;
   font-size: 20px;
   display: none; /* Masqué au début */
   cursor: pointer;
@@ -446,7 +476,7 @@ header {
   background-color: var(--main-purple-color);
   border-radius: 50%;
   transform: translateY(-50%);
-  transition: .3s;
+  transition: 0.3s;
 }
 .main-title::before {
   left: -20px;
@@ -495,7 +525,7 @@ header {
   height: 0;
   background-color: blue;
   z-index: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 .info-special:hover::before {
   height: 100%;
@@ -518,7 +548,7 @@ header {
 }
 @keyframes arrow {
   to {
-     transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 /* compenent */
@@ -627,7 +657,7 @@ header {
 /* end Sécurité DevOps */
 /* conclusion */
 .conclusion {
-  padding: 20px 20px 40px; 
+  padding: 20px 20px 40px;
   line-height: 1.5;
   color: #ffea00;
   background-color: rgb(5, 159, 193);
@@ -639,14 +669,14 @@ footer {
   color: white;
   padding: 70px 0 0;
 }
-footer  .contact {
+footer .contact {
   padding-bottom: 10px;
   text-align: center;
   width: fit-content;
   margin: 0 auto;
   border-bottom: 2px solid var(--section-color-impair);
 }
-footer  .contact + p {
+footer .contact + p {
   text-align: center;
   color: var(--clr-grey-10);
   margin: 20px 0;
@@ -758,7 +788,7 @@ footer .footer-content {
   border-radius: 5px;
   border: none;
   background-color: var(--section-color-impair);
-  transition: .3s;
+  transition: 0.3s;
   position: relative;
 }
 .footer-content form button:hover {
@@ -776,7 +806,7 @@ footer .footer-content {
   height: 100%;
   background-color: blue;
   z-index: -1;
-  transition: .3s;
+  transition: 0.3s;
 }
 .footer-content form button:hover:before {
   width: 100%;
