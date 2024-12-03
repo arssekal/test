@@ -695,6 +695,11 @@ footer .footer-content {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  footer .footer-content {
+    display: grid;
+  }
+}
 .footer-content .box {
   border: 2px solid var(--section-color-pair);
   padding: 10px 20px;
