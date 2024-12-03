@@ -201,7 +201,7 @@ header {
 /* landing */
 .landing {
   /* background-image: url(../images/devops-3.avif); */
-  height: calc(100vh - 60px);
+  height: calc(100vh - 64px);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
